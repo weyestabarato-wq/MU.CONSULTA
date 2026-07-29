@@ -94,30 +94,30 @@
   .btn:hover{background: var(--rojo-oscuro);}
   .btn:active{transform: scale(0.995);}
   .btn:disabled{background:#9fa9b6; cursor:wait;}
-  .resultado{ display:none; border-top:1px dashed var(--linea); padding:14px 30px 18px; }
+  .resultado{ display:none; border-top:1px dashed var(--linea); padding:9px 30px 13px; }
   .resultado.mostrar{display:block; animation: aparecer .5s ease both;}
   @keyframes aparecer{ from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:translateY(0);} }
   .resultado-encabezado{
-    display:flex; align-items:baseline; justify-content:space-between; margin-bottom:12px; flex-wrap:wrap; gap:8px;
+    display:flex; align-items:baseline; justify-content:space-between; margin-bottom:7px; flex-wrap:wrap; gap:8px;
   }
   .resultado-encabezado h2{ font-family:'Fraunces', serif; font-size:1.35rem; margin:0; color:var(--azul-oscuro); }
   .resultado-encabezado .id-consultado{ font-family:'IBM Plex Mono', monospace; font-size:12px; color:#6b7d90; }
   .nombre-estudiante{
     font-family:'Fraunces', serif; font-size:1.05rem; color:var(--azul-oscuro);
-    margin:-6px 0 12px; padding-bottom:10px; border-bottom:1px solid var(--linea);
+    margin:-6px 0 7px; padding-bottom:5px; border-bottom:1px solid var(--linea);
   }
   .nombre-estudiante span{
     display:block; font-family:'IBM Plex Mono', monospace; font-size:11px; color:#6b7d90;
     text-transform:uppercase; letter-spacing:.1em; margin-bottom:4px;
   }
-  .ficha{ border:1px solid var(--linea); border-radius:3px; margin-bottom:8px; overflow:hidden; }
-  .ficha-cab{ display:flex; align-items:center; gap:10px; padding:10px 16px; background:#f7f6f1; border-bottom:1px solid var(--linea); }
+  .ficha{ border:1px solid var(--linea); border-radius:3px; margin-bottom:3px; overflow:hidden; }
+  .ficha-cab{ display:flex; align-items:center; gap:10px; padding:5px 16px; background:#f7f6f1; border-bottom:1px solid var(--linea); }
   .ficha-num{
     font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--rojo); font-weight:700;
     background:rgba(184,40,63,0.1); padding:2px 7px; border-radius:2px;
   }
   .ficha-titulo{ font-weight:600; font-size:14.5px; color:var(--azul-oscuro); }
-  .ficha-cuerpo{ padding:12px 16px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+  .ficha-cuerpo{ padding:7px 16px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:10px; }
   .ficha-dato{font-size:14px; line-height:1.5; color:#2a3644;}
   .ficha-dato b{color:var(--tinta);}
   .estado{
@@ -139,7 +139,7 @@
     border-radius:3px; font-size:14px; line-height:1.6;
   }
   .nota-fuente{
-    margin-top:12px; padding:10px 14px; background: rgba(27,58,99,0.06);
+    margin-top:7px; padding:5px 14px; background: rgba(27,58,99,0.06);
     border-left:3px solid var(--azul); border-radius:2px; font-size:12.5px; line-height:1.6; color:#33475f;
   }
   .racha-wrap{
@@ -156,8 +156,7 @@
   }
   @media (max-width:520px){
     form{padding:28px 20px 22px;}
-    .resultado{padding:22px 20px 26px;}
-    .ficha-cuerpo{flex-direction:column; align-items:flex-start;}
+    .resultado{padding:16px 20px 20px;}
   }
   @media (prefers-reduced-motion: reduce){ .resultado.mostrar{animation:none;} }
 </style>
