@@ -251,7 +251,7 @@
             </div>
             <div class="ficha-cuerpo">
               <div class="ficha-dato">${HABILITADO
-                ? 'Tu registro figura <b>HABILITADO</b> para sufragar en el presente proceso electoral.'
+                ? 'Tu registro figura <b>HABILITADO</b> para votar.'
                 : 'Tu registro figura <b>NO HABILITADO</b> para sufragar. Verifica tu situación con la corte electoral universitaria.'}</div>
               <span class="estado ${HABILITADO ? 'ok' : 'no'}">${HABILITADO ? 'HABILITADO' : 'NO HABILITADO'}</span>
             </div>
@@ -270,12 +270,12 @@
           <div class="ficha">
             <div class="ficha-cab">
               <span class="ficha-num">03</span>
-              <span class="ficha-titulo">Sorteo de delegados electorales</span>
+              <span class="ficha-titulo">Sorteo de delegados</span>
             </div>
             <div class="ficha-cuerpo">
               <div class="ficha-dato">${esDelegado
                 ? 'Fuiste sorteado/a: <b>' + datos.delegado + '</b>.'
-                : 'No saliste sorteado/a como delegado/a de mesa.'}</div>
+                : 'No saliste como delegado/a de mesa.'}</div>
               <span class="estado ${esDelegado ? 'ok' : 'neutro'}">${esDelegado ? 'ES DELEGADO(A)' : 'NO ES DELEGADO(A)'}</span>
             </div>
           </div>
