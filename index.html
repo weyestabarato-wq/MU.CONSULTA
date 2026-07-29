@@ -168,7 +168,7 @@
   <img class="logo-mu" src="/assets/logo-mu.png" alt="MU">
   <div class="eyebrow">Sistema de Consulta Electoral Estudiantil</div>
   <h1>Movimiento <em>Universitario</em></h1>
-  <p class="subt">Verifica tu habilitación, mesa y sorteo de delegado para el proceso electoral universitario.</p>
+  <p class="subt">Verifica tu habilitación, aula, mesa y sorteo de delegado.</p>
 </header>
 
 <main>
@@ -231,7 +231,7 @@
             Verifica que el número de registro o cédula esté bien escrito.
           </div>`;
       } else {
-        const habilitado = datos.vota === 'SI';
+        const HABILITADO = datos.vota === 'SI';
         const esDelegado = datos.delegado !== 'NO ES DELEGADO(A)';
 
         resultado.innerHTML = `
