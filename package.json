@@ -1,9 +1,0 @@
-{
-  "name": "movimiento-universitario",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Consulta electoral estudiantil con búsqueda resuelta en el servidor.",
-  "engines": {
-    "node": ">=18"
-  }
-}
